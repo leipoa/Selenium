@@ -3,9 +3,12 @@ package org.example;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
-    class Test {
+
+class Test {
 
         private WebDriver driver;
 
@@ -13,8 +16,6 @@ import org.junit.jupiter.api.BeforeEach;
         static void setUpAll() {
             System.setProperty("webdriver.chrome.driver", "C:/Users/User/chromedriver/chromedriver.exe");
         }
-
-        private WebDriver driver;
 
         @BeforeEach
         void setUp() {
