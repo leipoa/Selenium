@@ -56,7 +56,7 @@ class FormTest {
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
     @Test
-    void wrongPhone(){
+    void noPhone(){
         driver.get("http://localhost:7777/");
 
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
